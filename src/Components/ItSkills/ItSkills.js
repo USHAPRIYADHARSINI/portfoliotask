@@ -3,7 +3,7 @@ import './ItSkills.css';
 
 // import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 import { FaHtml5, FaGithub, FaCss3Alt, FaReact } from "react-icons/fa";
-import { SiJavascript, SiMongodb, SiAdobephotoshop } from "react-icons/si";
+import { SiJavascript, SiMongodb, SiAdobephotoshop, SiPostman, SiHeroku } from "react-icons/si";
 import { BsBootstrap } from "react-icons/bs";
 import { DiNodejs } from "react-icons/di";
 
@@ -46,7 +46,15 @@ function ItSkills() {
       <div className='skillscard'>
       <SiAdobephotoshop color='black'/>  
       <h3>PHOTOSHOP</h3>
-      </div>    
+      </div>   
+      <div className='skillscard'>
+      <SiPostman color='rgb(219, 76, 76)'/>  
+      <h3>POSTMAN</h3>
+      </div>  
+      <div className='skillscard'>
+      <SiHeroku color='rgb(219, 76, 76)'/>  
+      <h3>HEROKU</h3>
+      </div>
     </div>
   )
 }

@@ -28,7 +28,8 @@ body{
     height: 100vh;
     background-position: center;
     /* background-color: blue; */
-    background-image:url("/src/Images/6846034.jpg");
+    background-image:url("/src/Images/abstract-pastel-memphis-patterned-background-vector_53876-140331.webp");
+    /* background-blend-mode:soft-light; */
     background-size: cover;
     background-blend-mode:lighten;
     
@@ -41,7 +42,8 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: rgba(245, 245, 245, 0.603);
+    /* background-color: rgba(245, 245, 245, 0.603); */
+    background-color: rgba(207, 202, 202, 0.603);
     height: 10%;
     width: 100vw;
     margin: 10px;
@@ -50,7 +52,7 @@ body{
   .header{
     min-height:10%;
     width: 100vw;
-    background-color: rgba(245, 245, 245, 0.603);
+    background-color: rgba(207, 202, 202, 0.603);
     display: flex;
     align-items: center;
     justify-content: end;

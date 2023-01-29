@@ -14,7 +14,7 @@ import { IconContext } from 'react-icons'
 
 function App() {
   return (
-    <IconContext.Provider value={{color:'brown', size:'6em'}}>
+    <IconContext.Provider value={{color:'brown', size:'4em'}}>
     <div className="App bg">
       <Header/>
       <div>
