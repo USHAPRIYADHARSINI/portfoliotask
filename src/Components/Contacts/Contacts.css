@@ -1,0 +1,15 @@
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: baseline;
+}
+.contacts-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color:gray;
+}
+.contacts-container h1{
+    color: black;
+}

@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import Contacts from './Components/Contacts/Contacts.js';
+import {Routes, Route} from 'react-router-dom';
+// import ThemeContext from './Components/ContextProvider/ThemeContext.js';
 import './App.css';
+import Navbar from './Components/Navbar/Navbar.js';
+import Header from './Components/Header.js';
+import Home from './Components/Home/Home.js';
+import ItSkills from './Components/ItSkills/ItSkills.js';
+import Projects from './Components/Projects/Projects.js';
+import Error from './Components/Error.js';
+import Next from './Components/Next.js';
+import { IconContext } from 'react-icons'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <IconContext.Provider value={{color:'brown', size:'6em'}}>
+    <div className="App bg">
+      <Header/>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/itskills" element={<ItSkills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/comingsoon" element={<Next />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </div>
+      <Navbar/>
     </div>
+    </IconContext.Provider>
   );
 }
 

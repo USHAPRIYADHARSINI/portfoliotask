@@ -1,0 +1,27 @@
+.itskills{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.skillscard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(139, 136, 136, 0.356);
+    padding: 20px;
+    width: 120px;
+    border-radius: 10px;
+  }
+  h3{
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 100%;
+    color: white;
+    font-size: small;
+    padding: 5px;
+  }

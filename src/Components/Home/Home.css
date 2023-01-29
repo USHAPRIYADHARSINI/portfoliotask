@@ -1,0 +1,15 @@
+.home{
+    text-align: center;
+    max-height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    /* background-color: brown; */
+    color:gray;
+}
+
+.home h1{
+    color:black;
+}
