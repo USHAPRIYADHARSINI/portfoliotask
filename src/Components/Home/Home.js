@@ -6,9 +6,9 @@ function Home() {
   return (
     <div className='home'>
       {/* <Links/> */}
-      <h1>Know all about me </h1>
+      <h2>Know all about me </h2>
       <p>Hi I'm Ushapriyadharsini S K</p>
-      <p>Full stack developer</p>
+      <strong><p>Full stack developer | Fresher </p></strong>
     </div>
   );
 }

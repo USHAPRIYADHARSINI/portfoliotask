@@ -5,6 +5,7 @@
     gap: 50px;
     align-items: center;
     justify-content: center;
+    margin: 30px;
 }
 .skillscard{
     display: flex;
@@ -13,15 +14,21 @@
     justify-content: center;
     gap: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgba(186, 142, 190, 0.356);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     padding: 20px;
-    width: 120px;
-    border-radius: 10px;
+    width: 90px;
+    /* border-radius: 10px; */
   }
-  h3{
-    background-color: rgba(0, 0, 0, 0.452);
+
+  .skillscard:hover{
+    scale: 1.1;
+  }
+
+  .skillscard p{
+    background-color: rgba(117, 115, 115, 0.452);
     width: 100%;
-    color: white;
+    color: rgb(2, 2, 2);
     font-size: small;
     padding: 5px;
   }

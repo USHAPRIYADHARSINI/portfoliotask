@@ -1,13 +1,21 @@
-.links-container{
-    display:flex;
-    flex-direction: column;
-    gap: 30px;
-    background-color: rgba(223, 219, 219, 0.575);
-    padding: 20px;
-    overflow:-moz-hidden-unscrollable;
-    height: 50vh;
-    scroll-behavior: smooth;
-}
-.projects-container h1{
+.projects-container{
     margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.links{
+    color: black;
+    font-size:smaller;
+    border: none;
+    background-color: whitesmoke;
+}
+.links:hover{
+    cursor: pointer;
+    color: rgb(80, 9, 9);
+}
+.links:active{
+    cursor: pointer;
+    color: rgb(110, 25, 25);
 }

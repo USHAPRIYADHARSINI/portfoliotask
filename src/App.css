@@ -1,13 +1,25 @@
 body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: whitesmoke;
 }
+
 .App {
     text-align: center;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap:50px;
   }
+
+.content {
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap:20px;
+}
   
   /* @keyframes App-logo-spin {
     from {
@@ -24,11 +36,11 @@ body{
   }
   
   .bg{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-position: center;
     /* background-color: blue; */
-    background-image:url("/src/Images/abstract-pastel-memphis-patterned-background-vector_53876-140331.webp");
+    /* background-image:url("/src/Images/abstract-pastel-memphis-patterned-background-vector_53876-140331.webp"); */
     /* background-blend-mode:soft-light; */
     background-size: cover;
     background-blend-mode:lighten;
@@ -43,23 +55,32 @@ body{
     align-items: center;
     justify-content: center;
     /* background-color: rgba(245, 245, 245, 0.603); */
-    background-color: rgba(207, 202, 202, 0.603);
+    background-color: rgb(255, 254, 254);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     height: 10%;
-    width: 100vw;
+    width: 100%;
     margin: 10px;
   }
   
   .header{
     min-height:10%;
-    width: 100vw;
-    background-color: rgba(207, 202, 202, 0.603);
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
     margin: 10px;
+    /* margin-left: 30px; */
+    /* padding-left: 30px; */
   }
 
-  .header h1 {
+  .header-a{
+    margin-left: 30px;
+    color: black;
+  }
+
+  .header h2 {
     padding-right: 20px;
   }
 

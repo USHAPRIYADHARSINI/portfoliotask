@@ -1,62 +1,72 @@
-import React from 'react'
-import './ItSkills.css';
-
-// import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
-import { FaHtml5, FaGithub, FaCss3Alt, FaReact } from "react-icons/fa";
-import { SiJavascript, SiMongodb, SiAdobephotoshop, SiPostman, SiHeroku } from "react-icons/si";
-import { BsBootstrap } from "react-icons/bs";
-import { DiNodejs } from "react-icons/di";
-
+import React from "react";
+import "./ItSkills.css";
+import {FaGithub} from "react-icons/fa";
+import Html from "../Icons/Html";
+import Css from '../Icons/Css';
+import Jsicon from '../Icons/Jsicon';
+import Reactjs from '../Icons/Reactjs';
+import Nodejs from '../Icons/Nodejs';
+import Heroku from '../Icons/Heroku';
+import Bootstrap from '../Icons/Bootstrap';
+import Mongodb from '../Icons/Mongodb';
+import Postman from '../Icons/Postman';
+import Netlify from '../Icons/Netlify';
+import Photoshop from '../Icons/Photoshop';
+import Github from '../Icons/Github';
 
 function ItSkills() {
   return (
-    <div className='itskills'>
-      <div className='skillscard'>
-        <FaHtml5 color='black'/>
-        <h3>HTML</h3>
+    <div className="itskills">
+      <div className="skillscard">
+        <Html/>
+        <p>HTML</p>
       </div>
-      <div className='skillscard'>
-      <FaCss3Alt color='black'/>
-      <h3>CSS</h3>
+      <div className="skillscard">
+        <Css/>
+        <p>CSS</p>
       </div>
-      <div className='skillscard'>
-      <SiJavascript color='brown'/>
-      <h3>JAVASCRIPT</h3>
+      <div className="skillscard">
+        <Jsicon/>
+        <p>JAVASCRIPT</p>
       </div>
-      <div className='skillscard'>
-      <FaReact color='cornflowerblue'/>
-      <h3>REACT_JS</h3>
+      <div className="skillscard">
+        <Reactjs/>
+        <p>REACT_JS</p>
       </div>
-      <div className='skillscard'>
-      <DiNodejs color='green'/>
-      <h3>NODE_JS</h3>
+      <div className="skillscard">
+        <Nodejs/>
+        <p>NODE_JS</p>
       </div>
-      <div className='skillscard'>
-      <BsBootstrap color='blue'/>
-      <h3>BOOTSTRAP</h3>
+      <div className="skillscard">
+        <Bootstrap/>
+        <p>BOOTSTRAP</p>
       </div>
-      <div className='skillscard'>
-      <SiMongodb color='green'/>
-      <h3>MONGODB</h3>
+      <div className="skillscard">
+        <Mongodb/>
+        <p>MONGODB</p>
       </div>
-      <div className='skillscard'>
-      <FaGithub color='brown'/>
-      <h3>GITHUB</h3>
+      <div className="skillscard">
+        <Github/>
+        <p>GITHUB</p>
       </div>
-      <div className='skillscard'>
-      <SiAdobephotoshop color='black'/>  
-      <h3>PHOTOSHOP</h3>
-      </div>   
-      <div className='skillscard'>
-      <SiPostman color='rgb(219, 76, 76)'/>  
-      <h3>POSTMAN</h3>
-      </div>  
-      <div className='skillscard'>
-      <SiHeroku color='rgb(219, 76, 76)'/>  
-      <h3>HEROKU</h3>
+      <div className="skillscard">
+        <Photoshop/>
+        <p>PHOTOSHOP</p>
+      </div>
+      <div className="skillscard">
+        <Postman/>
+        <p>POSTMAN</p>
+      </div>
+      <div className="skillscard">
+        <Heroku/>
+        <p>HEROKU</p>
+      </div>
+      <div className="skillscard">
+        <Netlify/>
+        <p>NETLIFY</p>
       </div>
     </div>
-  )
+  );
 }
 
-export default ItSkills
+export default ItSkills;

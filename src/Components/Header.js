@@ -3,7 +3,8 @@ import React from 'react'
 function Header() {
   return (
     <div className='header'>
-        <h1>Ushapriyadharsini</h1>
+        <a className='header-a' href="https://github.com/USHAPRIYADHARSINI/word-resume">My resume</a>
+        <h2>Ushapriyadharsini</h2>
     </div>
   )
 }
