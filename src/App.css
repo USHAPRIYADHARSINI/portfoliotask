@@ -63,21 +63,33 @@ body{
   }
   
   .header{
-    min-height:10%;
+    min-height:8%;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.521);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10px;
+    /* position: sticky; */
+    
+    /* margin: 30px; */
     /* margin-left: 30px; */
     /* padding-left: 30px; */
   }
 
   .header-a{
+    background-color: rgba(117, 115, 115, 0.452);
+    padding: 10px;
     margin-left: 30px;
     color: black;
+    text-decoration: solid;
+  }
+  .header-a:hover{
+    background-color: rgb(167, 165, 165);
+  }
+  .header-a:active{
+    background-color: rgb(43, 42, 42);
+    color: white;
   }
 
   .header h2 {
@@ -87,5 +99,40 @@ body{
   .links-container{
     display: flex;
     overflow:scroll;
+  }
+
+  .form{
+    min-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  .form input, textarea{
+    width: 500px;
+    padding: 5px;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .form textarea{
+    height: 200px;
+  }
+  .button{
+    background-color: rgb(189, 185, 185);
+    color: rgb(2, 2, 2);
+    font-size: small;
+    padding: 10px;
+    text-decoration: solid;
+    border: none;
+  }
+  .button:hover{
+    background-color: rgb(167, 165, 165);
+  }
+  .button:active{
+    background-color: rgb(43, 42, 42);
+    color: white;
   }
 

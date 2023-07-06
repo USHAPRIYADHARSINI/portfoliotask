@@ -1,6 +1,5 @@
 import React from "react";
 import "./ItSkills.css";
-import {FaGithub} from "react-icons/fa";
 import Html from "../Icons/Html";
 import Css from '../Icons/Css';
 import Jsicon from '../Icons/Jsicon';

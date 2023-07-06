@@ -19,3 +19,102 @@
     cursor: pointer;
     color: rgb(110, 25, 25);
 }
+.projectcard{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-evenly;
+    /* gap: 10px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 20px;
+    width: 800px;
+    /* border-radius: 10px; */
+  }
+  .des{
+    text-align: left;
+  }
+
+  .project:hover{
+    scale: 1.1;
+    /* position: relative;
+    top: 20; */
+  }
+
+  .project a{
+    background-color: rgba(117, 115, 115, 0.452);
+    color: rgb(2, 2, 2);
+    font-size: small;
+    padding: 10px;
+    text-decoration: solid;
+  }
+  .book{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 50px;
+  }
+  .bookcard{
+    background-color: rgba(74, 156, 250, 0.452);
+    min-width: 30px;
+    height: 200px;
+  }
+  .bookcard:hover{
+    cursor: pointer;
+    display: block;
+    min-width: 300px;
+    min-height: 100px;
+    transform:scale(1.1);
+    transition-duration:0.5s;
+    background-color: rgba(197, 220, 247, 0.452);
+    /* background-color: rgba(8, 8, 8, 0.452); */
+    box-shadow: rgba(8, 8, 8, 0.445) 0px 4px 12px;
+    padding: 20px;
+    /* border-radius: 20px; */
+  }
+  .bdes, .link{
+    min-width: 20px;
+    min-height:100px;
+  }
+  .book a{
+    background-color: whitesmoke;
+    color: rgb(2, 2, 2);
+    font-size: small;
+    padding: 10px;
+    text-decoration: solid;
+  }
+  .book a:hover{
+    background-color: white;
+  }
+  .book a:active{
+    background-color: rgb(214, 212, 212);
+  }
+.index{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    min-height: 100%;
+    font-weight:300;
+}
+.pro-container{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items:center;
+    line-height: 3;
+}
