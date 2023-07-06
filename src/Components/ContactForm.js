@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+const swal = require('sweetalert2')
 
 export const ContactForm = () => {
   const form = useRef();
@@ -21,11 +22,27 @@ export const ContactForm = () => {
         .then(
           (result) => {
             console.log(result.text)
-            alert("Thank you for contacting!")
+            swal.fire({
+              title: "Thank you for contacting!",
+              icon: "success",
+              toast: true,
+              timer: 6000,
+              position: 'top-right',
+              timerProgressBar: true,
+              showConfirmButton: false,
+          })
           },
           (error) => {
             console.log(error.text)
-            alert(error.text)
+            swal.fire({
+              title: error.text,
+              icon: "success",
+              toast: true,
+              timer: 6000,
+              position: 'top-right',
+              timerProgressBar: true,
+              showConfirmButton: false,
+          })
           }
         );
     }
