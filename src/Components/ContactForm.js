@@ -29,6 +29,7 @@ export const ContactForm = () => {
           }
         );
     }
+    e.target.reset();
   };
 
   return (
