@@ -20,10 +20,12 @@ export const ContactForm = () => {
         )
         .then(
           (result) => {
-            console.log(result.text);
+            console.log(result.text)
+            alert("Thank you for contacting!")
           },
           (error) => {
-            console.log(error.text);
+            console.log(error.text)
+            alert(error.text)
           }
         );
     }
