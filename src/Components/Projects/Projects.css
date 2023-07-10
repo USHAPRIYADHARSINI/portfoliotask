@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: row;
     align-items:flex-start;
-    justify-content: space-evenly;
+    justify-content:space-between;
     /* gap: 10px; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(255, 255, 255);
@@ -44,20 +44,52 @@
   }
   .des{
     text-align: left;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .des h3{
+    background-color: whitesmoke;
+    width: 100%;
+  }
+  .des p{
+    line-height: 1.5;
   }
 
   .project:hover{
-    scale: 1.1;
+    transform: scale(1.05);
+    /* scale: 1.05; */
+    transition-duration: 0.3s;
     /* position: relative;
     top: 20; */
+    /* box-shadow: rgba(241, 145, 19, 0.61) 0px 4px 12px; */
   }
 
   .project a{
     background-color: rgba(117, 115, 115, 0.452);
     color: rgb(2, 2, 2);
     font-size: small;
-    padding: 10px;
+    padding: 5px;
     text-decoration: solid;
+  }
+  .visit:hover{
+    background-color: orange;
+  }
+  .fe:hover{
+    background-color: rgb(65, 65, 65);
+  }
+  .be:hover{
+    background-color: rgb(6, 126, 173);
+  }
+  .visit:active{
+    background-color: rgb(250, 203, 116);
+  }
+  .fe:active{
+    background-color: rgb(129, 128, 128);
+  }
+  .be:active{
+    background-color: rgb(90, 146, 168);
   }
   .book{
     display: flex;
@@ -118,3 +150,22 @@
     align-items:center;
     line-height: 3;
 }
+.alllinks{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* .yellow{
+  width: 100%;
+  height:50px;
+  background-color: rgba(255, 166, 0, 0.452);
+}
+.blue{
+  width: 100%;
+  height: 50px;
+  background-color: rgba(6, 126, 173, 0.459);
+} */
+/* .my-pro{
+  background-color: rgba(245, 141, 6, 0.226);
+  width: 100%;
+} */

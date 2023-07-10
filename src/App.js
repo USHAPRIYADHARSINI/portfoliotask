@@ -7,54 +7,73 @@ import Projects from './Components/Projects/Projects.js';
 import { IconContext } from 'react-icons';
 import ProjectCard from './Components/Projects/ProjectCard.js';
 import { ContactForm } from './Components/ContactForm.js';
-import { useState } from 'react';
 
 function App() {
   const data = [
     {
-      link:"https://master--voluble-cannoli-688d68.netlify.app/",
+      link:"https://d3-dashboard-client-usha.netlify.app/",
       projectName:"Dashboard app",
-      description: "A dashboard application built using reactjs, D3.js, nodejs, mongodb"
+      description: "A full stack app using d3.js, reactjs, Mongodb, nodejs, Signup, Login, Logout, Graphs, Filters, etc",
+      git_frontend:"https://github.com/USHAPRIYADHARSINI/d3-client",
+      git_backend:"https://github.com/USHAPRIYADHARSINI/d3-server"
     },{
       link:"https://bookstore-react-node-usha.netlify.app/",
       projectName:"Online book store app",
-      description: "A dashboard application built using reactjs, D3.js, nodejs, mongodb"
+      description: "A full stack app using reactjs, Mongodb, nodejs, Signup, Login, Auth, Logout, Filters, cart, payment, etc",
+      git_frontend:"https://github.com/USHAPRIYADHARSINI/bookstore-react",
+      git_backend:"https://github.com/USHAPRIYADHARSINI/bookstore-node-backend"
     },{
       link:"https://chatapp-client-usha.netlify.app/",
       projectName:"Capstone - chatapp",
-      description: "A dashboard application built using reactjs, D3.js, nodejs, mongodb"
+      description: "A full stack application using socket.io, Login, Logout, Signup, Forgot Password, Reset password, Contacts, and Conversations, etc",
+      git_frontend:"https://github.com/USHAPRIYADHARSINI/chatapp-client-origin2",
+      git_backend:"https://github.com/USHAPRIYADHARSINI/chitchat-server"
     },{
-      link:"https://splendorous-pie-329b94.netlify.app/",
+      link:"https://student-teacher-app-usha.netlify.app",
       projectName:"Student-teacher app",
-      description: "A dashboard application built using reactjs, D3.js, nodejs, mongodb"
+      description: "A full stack application of student & teacher (to add and remove students from a teacher's guidance and vice versa) Frontend using HTML, JS, CSS",
+      git_frontend:"https://github.com/USHAPRIYADHARSINI/tsapi-client",
+      git_backend:"https://github.com/USHAPRIYADHARSINI/tsapi-server"
     },{
       link:"https://stockprice-usha.netlify.app/",
       projectName:"Stockprice app",
-      description: "A dashboard application built using reactjs, D3.js, nodejs, mongodb"
+      description: "Used firebase login services, Alpha vantage api, React-share etc Only used Frontend in react",
+      git_frontend:"https://github.com/USHAPRIYADHARSINI/sp-client"
     },{
       link:"https://spectacular-stroopwafel-e2df72.netlify.app/",
       projectName:"webcode 1 - Makeup api",
-      description: "A dashboard application built using reactjs, D3.js, nodejs, mongodb"
+      description: "My first webcode Frontend only using HTML, CSS, JS, makeup api",
+      git_frontend:"https://github.com/USHAPRIYADHARSINI/webcode-usha"
     },{
       link:"https://weatherapinormal.netlify.app/",
       projectName:"Weather API",
-      description: "A dashboard application built using reactjs, D3.js, nodejs, mongodb"
+      description: "Only Frontend - HTML, CSS, JS, restcountries and weather api",
+      git_frontend:"github.com/USHAPRIYADHARSINI/weather-api-normal"
     },{
       link:"https://restcountriesweather.netlify.app",
       projectName:"Rest countries API",
-      description: "A dashboard application built using reactjs, D3.js, nodejs, mongodb"
+      description: "Only Frontend - HTML, CSS, JS, restcountries api",
+      git_frontend:"github.com/USHAPRIYADHARSINI/day-18-task"
     },{
       link:"https://formsandtables.netlify.app",
       projectName:"Forms and tables",
-      description: "A dashboard application built using reactjs, D3.js, nodejs, mongodb"
+      description: "Only Frontend - HTML, CSS and JS",
+      git_frontend:"github.com/USHAPRIYADHARSINI/day-12-task-1"
+    },{
+      link:"https://day15taskcalculator.netlify.app",
+      projectName:"Calculator app",
+      description: "Only Frontend - HTML, CSS and JS",
+      git_frontend:"github.com/USHAPRIYADHARSINI/day-15-task-calculator"
     },{
       link:"https://cat-apiusha.netlify.app",
       projectName:"Cat API",
-      description: "A dashboard application built using reactjs, D3.js, nodejs, mongodb"
+      description: "Only Frontend - HTML, CSS and JS",
+      git_frontend:"github.com/USHAPRIYADHARSINI/CAT-API"
     },{
       link:"https://dog-api-usha.netlify.app",
       projectName:"Dog API",
-      description: "A dashboard application built using reactjs, D3.js, nodejs, mongodb"
+      description: "Only Frontend - HTML, CSS and JS",
+      git_frontend:"github.com/USHAPRIYADHARSINI/DOG-API"
     }
   ]
   
