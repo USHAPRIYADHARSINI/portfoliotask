@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function ProjectCard({ data }) {
+function ProjectCard({ fullstack, projects }) {
   // const [hover, setHover] = useState(false);
   // const [hoverIndex, setHoverIndex] = useState("");
 
@@ -20,7 +20,6 @@ function ProjectCard({ data }) {
     <div className="pro-container">
       <div className="yellow"></div>
       <h3 className="my-pro">My Projects</h3>
-      <div className="blue"></div>
       {/* <p>Hover over the sticks</p> */}
       {/* <div className="book">
         {data
@@ -52,8 +51,36 @@ function ProjectCard({ data }) {
       <button className="button" onClick={()=> setShow(!show)}>{show? "Minimize view": "show all"}</button> */}
 
       <div className="projectcard">
-        {data
-          ? data.map((d, index) => (
+        <h4 className="my-pro">Full stack projects</h4>
+        {fullstack
+          ? fullstack.map((d, index) => (
+              <div className="project" key={index}>
+                <div className="des">
+                  <h3>{d.projectName}</h3>
+                  <p>{d.description}</p>
+                </div>
+                <div className="alllinks">
+                  <a href={d.link} target="_blank" className="visit">
+                    Visit
+                  </a>
+                  <a href={d.git_frontend} target="_blank" className="fe">
+                    Frontend source code
+                  </a>
+                  {d.git_backend ? (
+                    <a href={d.git_backend} target="_blank" className="be">
+                      Backend source code
+                    </a>
+                  ) : null}
+                </div>
+              </div>
+            ))
+          : "Loading.."}
+      </div>
+
+      <div className="projectcard">
+      <h4 className="my-pro">stepstone projects</h4>
+        {projects
+          ? projects.map((d, index) => (
               <div className="project" key={index}>
                 <div className="des">
                   <h3>{d.projectName}</h3>

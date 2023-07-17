@@ -9,19 +9,19 @@ import ProjectCard from './Components/Projects/ProjectCard.js';
 import { ContactForm } from './Components/ContactForm.js';
 
 function App() {
-  const data = [
-    {
-      link:"https://d3-dashboard-client-usha.netlify.app/",
-      projectName:"Dashboard app",
-      description: "A full stack app using d3.js, reactjs, Mongodb, nodejs, Signup, Login, Logout, Graphs, Filters, etc",
-      git_frontend:"https://github.com/USHAPRIYADHARSINI/d3-client",
-      git_backend:"https://github.com/USHAPRIYADHARSINI/d3-server"
-    },{
+  const fullstack = [
+   {
       link:"https://bookstore-react-node-usha.netlify.app/",
       projectName:"Online book store app",
       description: "A full stack app using reactjs, Mongodb, nodejs, Signup, Login, Auth, Logout, Filters, cart, payment, etc",
       git_frontend:"https://github.com/USHAPRIYADHARSINI/bookstore-react",
       git_backend:"https://github.com/USHAPRIYADHARSINI/bookstore-node-backend"
+    }, {
+      link:"https://d3-dashboard-client-usha.netlify.app/",
+      projectName:"Dashboard app",
+      description: "A full stack app using d3.js, reactjs, Mongodb, nodejs, Signup, Login, Logout, Graphs, Filters, etc",
+      git_frontend:"https://github.com/USHAPRIYADHARSINI/d3-client",
+      git_backend:"https://github.com/USHAPRIYADHARSINI/d3-server"
     },{
       link:"https://chatapp-client-usha.netlify.app/",
       projectName:"Capstone - chatapp",
@@ -34,7 +34,10 @@ function App() {
       description: "A full stack application of student & teacher (to add and remove students from a teacher's guidance and vice versa) Frontend using HTML, JS, CSS",
       git_frontend:"https://github.com/USHAPRIYADHARSINI/tsapi-client",
       git_backend:"https://github.com/USHAPRIYADHARSINI/tsapi-server"
-    },{
+    }]
+    
+    
+    const projects = [{
       link:"https://stockprice-usha.netlify.app/",
       projectName:"Stockprice app",
       description: "Used firebase login services, Alpha vantage api, React-share etc Only used Frontend in react",
@@ -84,10 +87,10 @@ function App() {
       <div className="content">
         <Home/>
         <ItSkills/>
-        <ProjectCard data={data}/>
+        <ProjectCard fullstack={fullstack} projects={projects}/>
         <Contacts/>
         <ContactForm/>
-        <Projects data={data}/>
+        <Projects fullstack={fullstack} projects={projects}/>
       </div>
     </div>
     </IconContext.Provider>
