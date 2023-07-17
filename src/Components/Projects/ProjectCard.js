@@ -78,7 +78,7 @@ function ProjectCard({ fullstack, projects }) {
       </div>
 
       <div className="projectcard">
-      <h4 className="my-pro">stepstone projects</h4>
+      <h4 className="my-pro">Stepstone projects</h4>
         {projects
           ? projects.map((d, index) => (
               <div className="project" key={index}>

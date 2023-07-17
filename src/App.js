@@ -31,7 +31,7 @@ function App() {
     },{
       link:"https://student-teacher-app-usha.netlify.app",
       projectName:"Student-teacher app",
-      description: "A full stack application of student & teacher (to add and remove students from a teacher's guidance and vice versa) Frontend using HTML, JS, CSS",
+      description: "A full stack application of student & teacher (to add and remove students from a teacher's guidance and vice versa)",
       git_frontend:"https://github.com/USHAPRIYADHARSINI/tsapi-client",
       git_backend:"https://github.com/USHAPRIYADHARSINI/tsapi-server"
     }]
